@@ -1,0 +1,24 @@
+:root {
+  --color-dark:#207B1A;
+  --color-principal:#249D1C;
+  --color-secondary:#33BE29;
+  --color-white: #F3FCF1;
+  --shadow: 0 0 3px 1px rgba(250, 800, 230, .1)
+};
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+li, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
