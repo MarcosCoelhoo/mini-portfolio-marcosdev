@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
 :root {
   --color-dark:#207B1A;
   --color-principal:#249D1C;
   --color-secondary:#33BE29;
   --color-white: #F3FCF1;
-  --shadow: 0 0 3px 1px rgba(250, 800, 230, .1)
+  --color-pink: #DE56B2;
+  --shadow: 0 0 3px 1px rgba(25, 80, 23, .1);
+
+  --type-principal: "Barlow", sans-serif;
+  --type-secondary: "Poppins", sans-serif;
 };
 
 * {
@@ -12,7 +18,12 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+body {
+  background: #CCF6C8;
+  padding: 20px;
+}
+
+h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
@@ -22,3 +33,4 @@ li, ul {
   padding: 0;
   list-style: none;
 }
+
