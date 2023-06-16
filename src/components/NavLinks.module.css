@@ -3,10 +3,11 @@
   display: flex;
   gap: 1.5rem;
   position: absolute;
-  top: calc(3rem - 50%);
+  top: -2rem;
   left: 0;
   width: 100%;
-  /* overflow-x: scroll; */
+  box-sizing: border-box;
+
 }
 
 .nav a {
@@ -36,6 +37,10 @@
 }
 
 @media (max-width: 600px) {
+  .nav {
+    top: -1.5rem;
+  }
+  
   .nav a {
     font-size: 1rem;
   }
