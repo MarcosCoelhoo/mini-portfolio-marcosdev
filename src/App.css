@@ -10,17 +10,19 @@
 
   --type-principal: "Barlow", sans-serif;
   --type-secondary: "Poppins", sans-serif;
-};
+}
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 body {
   background: #CCF6C8;
-  padding: 20px;
+  margin: 0;
+  /* height: 100%; */
+  /* padding: 20px; */
 }
 
 h1, h2, h3, p {
@@ -34,3 +36,36 @@ li, ul {
   list-style: none;
 }
 
+.container {
+  background: var(--color-white);
+  height: 100vh;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.main {
+  /* border: 1px solid red   ; */
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  padding: 4rem 0;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft .3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 90%;
+    padding: 4rem 0;
+  }
+}
