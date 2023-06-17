@@ -1,5 +1,5 @@
 import styles from './NavLinks.module.css';
-import { Laugh, SquareStack } from 'lucide-react';
+import { GraduationCap, SquareStack } from 'lucide-react';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ const NavLinks = () => {
       </NavLink>
 
       <NavLink to={'/about'}>
-        <Laugh className={styles.icon} />
+        <GraduationCap className={styles.icon} />
         Sobre
       </NavLink>
     </nav>

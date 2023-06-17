@@ -3,48 +3,41 @@ import { Code2, Link2 } from 'lucide-react';
 import React from 'react';
 
 const Projects = () => {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    async function fetchData() {
+      const json = await (await fetch('./projects.json')).json();
+
+      setData(json);
+    }
+    fetchData();
+  }, []);
+
+  if (data === null) return null;
   return (
     <section className={`animeLeft ${styles.container}`}>
       <ul className={styles.projects}>
-        <li className={styles.item}>
-          <div className={styles.content}>
-            <h2>Dream Streaming</h2>
-            <p>
-              Dream é um site de streaming que foi criado usando HTML, CSS e JS,
-              junto da API do TMDB.
-            </p>
-          </div>
+        {data.map((item) => (
+          <li key={item.id} className={styles.item}>
+            <div className={styles.content}>
+              <h2>{item.title}</h2>
+              <p>{item.desc}</p>
+            </div>
 
-          <div className={styles.links}>
-            <a href="#" data-text="Ver código" title="Ver código">
-              <Code2 className={styles.icon} />
-            </a>
+            <div className={styles.links}>
+              <a href={item.repo} data-text="Ver código" title="Ver código">
+                <Code2 className={styles.icon} />
+              </a>
 
-            <a href="#" data-text="Ver website" title="Ver website">
-              <Link2 className={styles.icon} />
-            </a>
-          </div>
-        </li>
-
-        <li className={styles.item}>
-          <div className={styles.content}>
-            <h2>Dream Streaming</h2>
-            <p>
-              Dream é um site de streaming que foi criado usando HTML, CSS e JS,
-              junto da API do TMDB.
-            </p>
-          </div>
-
-          <div className={styles.links}>
-            <a href="#" data-text="Ver código" title="Ver código">
-              <Code2 className={styles.icon} />
-            </a>
-
-            <a href="#" data-text="Ver website" title="Ver website">
-              <Link2 className={styles.icon} />
-            </a>
-          </div>
-        </li>
+              {item.web && (
+                <a href={item.web} data-text="Ver website" title="Ver website">
+                  <Link2 className={styles.icon} />
+                </a>
+              )}
+            </div>
+          </li>
+        ))}
       </ul>
     </section>
   );
