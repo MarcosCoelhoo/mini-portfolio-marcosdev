@@ -1,0 +1,34 @@
+[
+  {
+    "academy": [
+      {
+        "date": "12/2021",
+        "title": "Conclusão do Ensino Médio",
+        "desc": "EEEM - Raimundo Ribeiro da Costa",
+        "id": 1
+      },
+      {
+        "date": "06/2023",
+        "title": "Graduação em Ciência da Computação",
+        "desc": "Universidade Fictícia",
+        "id": 2
+      },
+      {
+        "date": "09/2023",
+        "title": "Curso de Desenvolvimento Web",
+        "desc": "Instituto de Tecnologia",
+        "id": 3
+      }
+    ],
+    "skills": [
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Windows",
+      "Criatividade",
+      "Git",
+      "Python",
+      "MySQL"
+    ]
+  }
+]
