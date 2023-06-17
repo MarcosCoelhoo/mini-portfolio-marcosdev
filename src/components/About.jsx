@@ -4,7 +4,15 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className={`animeLeft`}>
+    <section
+      className={`animeLeft`}
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1rem',
+        paddingBottom: '2rem',
+      }}
+    >
       <Academy />
       <Skills />
     </section>
