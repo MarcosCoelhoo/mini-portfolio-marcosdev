@@ -3,7 +3,8 @@
 :root {
   --color-dark:#207B1A;
   --color-principal:#249D1C;
-  --color-secondary:#33BE29;
+  --color-secondary:#59D850;
+  --color-light: #92EA8B;
   --color-white: #F3FCF1;
   --color-pink: #DE56B2;
   --shadow: 0 0 3px 1px rgba(25, 80, 23, .1);
@@ -21,8 +22,9 @@
 body {
   background: #CCF6C8;
   margin: 0;
-  /* height: 100%; */
-  /* padding: 20px; */
+  box-shadow: inset 0 -6rem 0 0 var(--color-white);
+  height: 100vh;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, p {
@@ -38,7 +40,7 @@ li, ul {
 
 .container {
   background: var(--color-white);
-  height: 100vh;
+  height: fit-content;
   border-radius: 1rem 1rem 0 0;
 }
 
@@ -53,6 +55,13 @@ li, ul {
   opacity: 0;
   transform: translateX(-20px);
   animation: animeLeft .3s forwards;
+}
+
+.title {
+  font-family: var(--type-principal);
+  color: var(--color-light);
+  font-size: 1.25rem;
+  text-transform: uppercase;
 }
 
 @keyframes animeLeft {

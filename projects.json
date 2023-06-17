@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Dream Streaming",
+    "desc": "Dream é um site de streaming que foi criado usando HTML, CSS e JS, junto da API do TMDB.",
+    "web": "https://sitefake.com",
+    "repo": "https://sitefake.com",
+    "id": 1
+  },
+  {
+    "title": "Ocean Series",
+    "desc": "Ocean Series é uma nova série de suspense e mistério que se passa em uma ilha remota. Explore os segredos do oceano com esta emocionante produção.",
+    "web": "https://oceanseriesfake.com",
+    "repo": "https://oceanseriesfake.com",
+    "id": 2
+  },
+  {
+    "title": "Cinema Paradise",
+    "desc": "Cinema Paradise é uma plataforma de streaming dedicada aos amantes do cinema clássico. Assista aos filmes mais icônicos da história do cinema neste catálogo incrível.",
+    "web": "https://cinemaparadisefake.com",
+    "repo": "https://cinemaparadisefake.com",
+    "id": 3
+  },
+  {
+    "title": "Fitness Channel",
+    "desc": "Fitness Channel é uma plataforma de streaming focada em conteúdos de fitness e bem-estar. Acompanhe treinos, dicas de nutrição e muito mais para uma vida saudável.",
+    "web": "https://fitnesschannelfake.com",
+    "repo": "https://fitnesschannelfake.com",
+    "id": 4
+  },
+  {
+    "title": "Cooking Master",
+    "desc": "Cooking Master é um serviço de streaming que oferece uma variedade de programas culinários. Descubra receitas deliciosas, técnicas de culinária e dicas de chefs renomados.",
+    "web": "https://cookingmasterfake.com",
+    "repo": "https://cookingmasterfake.com",
+    "id": 5
+  },
+  {
+    "title": "Minha pika",
+    "desc": "Minha pika é um serviço de streaming que oferece uma variedade de programas culinários. Descubra receitas deliciosas, técnicas de culinária e dicas de chefs renomados.",
+    "web": "https://cookingmasterfake.com",
+    "repo": "https://cookingmasterfake.com",
+    "id": 6
+  }
+]
