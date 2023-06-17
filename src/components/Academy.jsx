@@ -2,34 +2,33 @@ import styles from './Academy.module.css';
 import React from 'react';
 
 const Academy = () => {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    async function fetchData() {
+      const json = await (await fetch('./about.json')).json();
+
+      setData(json[0].academy);
+    }
+
+    fetchData();
+  }, []);
+
+  if (data === null) return null;
   return (
     <div className={styles.academy}>
       <h1 className="title">Educação</h1>
 
       <ul className={styles.list}>
-        <li className={styles.item}>
-          <p className={styles.date}>12/2021</p>
-          <div className={styles.content}>
-            <h2>Conclusão do Ensino Médio</h2>
-            <p>EEEM - Raimundo Ribeiro da Costa</p>
-          </div>
-        </li>
-
-        <li className={styles.item}>
-          <p className={styles.date}>12/2021</p>
-          <div className={styles.content}>
-            <h2>Conclusão do Ensino Médio</h2>
-            <p>EEEM - Raimundo Ribeiro da Costa</p>
-          </div>
-        </li>
-
-        <li className={styles.item}>
-          <p className={styles.date}>12/2021</p>
-          <div className={styles.content}>
-            <h2>Conclusão do Ensino Médio</h2>
-            <p>EEEM - Raimundo Ribeiro da Costa</p>
-          </div>
-        </li>
+        {data.map((item) => (
+          <li key={item.id} className={styles.item}>
+            <p className={styles.date}>{item.date}</p>
+            <div className={styles.content}>
+              <h2>{item.title}</h2>
+              <p>{item.desc}</p>
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );
